@@ -401,20 +401,7 @@
       ;
     }
 
-/*
-#
-#   ADD CUSTOM ADMIN LOGIN LOGO
-#
-*/
 
-    function custom_admin_logo() {
-        echo '
-            <style type="text/css">
-                #wp-admin-bar-wp-logo { display:none !important; }
-            </style>
-        ';
-    }
-    add_action('admin_head', 'custom_admin_logo');
 
 /*
 #
