@@ -403,50 +403,7 @@
 
 
 
-/*
-#
-#   MOVE ADMIN BAR TO BOTTOM ON FRONT END
-#
-*/
-    function lm_admin_bar_bottom() {
-        echo '
-            <style type="text/css">
 
-                html {
-                    margin-top: 28px !important;
-                }
-
-                .admin-bar {
-                    margin-top: -28px;
-                    padding-bottom: 28px;
-                }
-
-                #wpadminbar {
-                    top: auto !important;
-                    bottom: 0;
-                }
-
-                #wpadminbar .quicklinks>ul>li { position: relative; }
-
-                #wpadminbar .ab-top-menu>.menupop>.ab-sub-wrapper { bottom: 28px; }
-
-                #wp-admin-bar-wp-logo { display: none; }
-            </style>'
-        ;
-    }
-
-    function my_filter_head() {
-        remove_action('wp_head', '_admin_bar_bump_cb');
-    }
-
-    if(current_user_can( 'edit_posts' )) {
-        if(!is_admin()) {
-            if(!wp_is_mobile()) {
-                add_action('wp_head', 'lm_admin_bar_bottom');
-                add_action('get_header', 'my_filter_head');
-            }
-        }
-    }
 
 /*
 #
