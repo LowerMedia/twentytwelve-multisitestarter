@@ -349,8 +349,6 @@
 
     if( is_admin() ) { $lowermedia_phonenumber_settings = new lowermedia_phonenumber_settings(); }
 
-
-
 /*
 #
 #   REGISTER SIDEBARS/WIDGET AREAS
