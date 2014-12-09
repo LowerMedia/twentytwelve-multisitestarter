@@ -171,13 +171,13 @@
     --    ADD CUSTOM POST TYPES HERE   --
 
 */
-    function namespace_add_custom_types( $query ) {
-      if( is_category() || is_tag() && empty( $query->query_vars['suppress_filters'] ) ) {
-            $query->set( 'post_type', array( 'post', 'post-type-name' ));
-            return $query;
-        }
-    }
-    add_filter( 'pre_get_posts', 'namespace_add_custom_types' );
+    // function namespace_add_custom_types( $query ) {
+    //   if( is_category() || is_tag() && empty( $query->query_vars['suppress_filters'] ) ) {
+    //         $query->set( 'post_type', array( 'post', 'post-type-name' ));
+    //         return $query;
+    //     }
+    // }
+    // add_filter( 'pre_get_posts', 'namespace_add_custom_types' );
 
 /*
 #
@@ -190,13 +190,13 @@
     --    ADD CUSTOM POST TYPES HERE   --
 
 */
-    function searchAll( $query ) {
-        if ( $query->is_search ) {
-            $query->set( 'post_type', array( 'post', 'page', 'feed', 'products', 'people'));
-        }
-        return $query;
-    }
-    add_filter( 'the_search_query', 'searchAll' );
+    // function searchAll( $query ) {
+    //     if ( $query->is_search ) {
+    //         $query->set( 'post_type', array( 'post', 'page', 'feed', 'products', 'people'));
+    //     }
+    //     return $query;
+    // }
+    // add_filter( 'the_search_query', 'searchAll' );
 
 /*
 #
