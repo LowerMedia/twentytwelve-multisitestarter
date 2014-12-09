@@ -401,10 +401,6 @@
       ;
     }
 
-
-
-
-
 /*
 #
 #   ENABLE SHORTCODE IN WIDGETS
