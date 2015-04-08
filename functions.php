@@ -331,7 +331,7 @@
          */
         public function print_section_info()
         {
-            print 'Enter your settings below:';
+            print 'Enter your phonenumber below:<br/> - Use [phonenumber] to activate<br/> - Make sure you add your country code to the begining (1 for North America), ie: 12223334444';
         }
 
         /** 
