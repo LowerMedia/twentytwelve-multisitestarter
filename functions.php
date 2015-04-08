@@ -297,7 +297,7 @@
 
             add_settings_section(
                 'setting_section_id', // ID
-                'My Custom Settings', // Title
+                'Enter your site specific Phone Number Below:', // Title
                 array( $this, 'print_section_info' ), // Callback
                 'lowermedia-setting-admin' // Page
             );  
@@ -331,7 +331,7 @@
          */
         public function print_section_info()
         {
-            print 'Enter your phonenumber below:<br/> - Use [phonenumber] to activate<br/> - Make sure you add your country code to the begining (1 for North America), ie: 12223334444';
+            print 'This creates a shortcode that outputs the site specific phone number as a link on mobile but only as text on desktop<br/><br/>Usage Info:<br/> - Use [phonenumber] to activate<br/> - Make sure you add your country code to the begining (1 for North America), ie: 12223334444';
         }
 
         /** 
